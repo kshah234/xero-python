@@ -38,7 +38,7 @@ jobs:
 
             -   name: Build package
                 run: |
-                    python setup.py sdist bdist_wheel
+                    python setup.py sdist
 
             -   name: Upload Python package artifact
                 uses: actions/upload-artifact@v3
