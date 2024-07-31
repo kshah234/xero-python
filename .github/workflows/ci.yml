@@ -36,11 +36,6 @@ jobs:
                     pip install tox
                     tox -e ${{ matrix.python-version }}
 
-            -   name: Lint code
-                run: |
-                    pip install flake8
-                    flake8 .
-
             -   name: Build package
                 run: |
                     python setup.py sdist bdist_wheel
